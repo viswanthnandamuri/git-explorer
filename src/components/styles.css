@@ -129,3 +129,17 @@ nav {
   margin-right: 10px;
   margin-left: 20px;
 }
+
+.fade-style {
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}

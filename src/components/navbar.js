@@ -1,18 +1,18 @@
 import React from "react";
 import "./styles.css";
-
+import { Outlet, Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
       <nav>
-        <a href="##" className="logo-nav">
-          Git Explorer
-        </a>
+        <Link to={"/"}>Git Explorer</Link>
         <div className="link-cont">
-          <a href="##">Repos</a>
-          <a href="##">Users</a>
+          <Link to={"/"}>Home</Link>
+          <Link to={"/users"}>Users</Link>
+          <Link to={"/login"}>Login</Link>
         </div>
       </nav>
+      <Outlet></Outlet>
     </>
   );
 };
